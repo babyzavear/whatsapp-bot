@@ -23,4 +23,8 @@ module.exports = class BotController extends Controller {
       return this.reply("Alamat kantor kami ada di Semarang Jawa Tengah")
     }
 
+    async fasilitas(request) {
+      return this.reply("Fasilitas kami dapat dilihat di http://babyzavear.com")
+    }
+
 }

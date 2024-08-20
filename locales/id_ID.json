@@ -2,5 +2,6 @@
     "intro": "Selamat datang",
     "template.menu": "Ketik angka *{{number}}* : untuk *{{menu}}*",
     "menu.daftarProduk": "🧰 Daftar Produk",
-    "menu.alamatKantor": "Alamat Kantor"
+    "menu.alamatKantor": "Alamat Kantor",
+    "menu.fasilitas": "Fasilitas Kami"
 }
