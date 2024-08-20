@@ -20,7 +20,7 @@ module.exports = class BotController extends Controller {
     }
 
     async alamatKantor(request) {
-      return this.reply("Alamat kantor kami ada di Semarang")
+      return this.reply("Alamat kantor kami ada di Semarang Jawa Tengah")
     }
 
 }
