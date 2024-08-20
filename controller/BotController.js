@@ -8,7 +8,8 @@ module.exports = class BotController extends Controller {
       return Response.menu.fromArrayOfString(
         [
           f("menu.daftarProduk"),
-          f("menu.alamatKantor")
+          f("menu.alamatKantor"),
+          f("menu.fasilitas")
         ],
         f("intro", [request.name]),
         f("template.menu")
