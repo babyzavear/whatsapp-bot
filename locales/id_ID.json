@@ -1,7 +1,10 @@
 {
-    "intro": "Selamat datang",
+    "intro": "Selamat datang di BabyZavear Laundry",
     "template.menu": "Ketik angka *{{number}}* : untuk *{{menu}}*",
-    "menu.daftarProduk": "🧰 Daftar Produk",
-    "menu.alamatKantor": "Alamat Kantor",
-    "menu.fasilitas": "Fasilitas Kami"
+    "menu.daftarHarga": "🗒️ Daftar Daftar Harga",
+    "tamplate.harga": "Ini Daftar Harga Kami :\n\nCuci lengkap : Rp. 5.000 \nCuci Kering : Rp. 4.500 \nSetrika : Rp. 3.500",
+    "menu.cekStatus": "🔍 Cek Status Laundry",
+    "menu.back": "🏡 Kembali ke Menu Utama",
+    "footer": "*Laundry Terbaik Di Kotamu*",
+    "headerCekStatus": "Terimakasih telah menghubungi kami, berikut adalah detail cucian anda :"
 }
