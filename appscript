@@ -1,3 +1,5 @@
+//with auto find number//
+
 const wbook = SpreadsheetApp.getActive();
 const sheet = wbook.getSheetByName("laundry");
 
@@ -34,4 +36,32 @@ function doGet(param) {
     return ContentService.createTextOutput(JSON.stringify(response)).setMimeType(ContentService.MimeType.JSON)
 
   }
+}
+
+//no auto find number//
+function doGet() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = sheet.getDataRange().getValues();
+
+  var jsonData = [];
+  var headers = data[0];
+
+  for (var i = 1; i < data.length; i++) {
+    var row = {};
+    for (var j = 0; j < headers.length; j++) {
+      row[headers[j]] = data[i][j];
+    }
+    jsonData.push(row);
+  }
+
+  const response = {
+    success: true,
+    message: "Sukses menampilkan data",
+    data: jsonData
+  }
+
+  console.log(response)
+
+  return ContentService.createTextOutput(JSON.stringify(response))
+    .setMimeType(ContentService.MimeType.JSON);
 }
