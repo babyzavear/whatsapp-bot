@@ -1,8 +1,8 @@
 {
-    "intro": "Selamat datang di BabyZavear Laundry",
+    "intro": "*Selamat datang di BabyZavear Laundry*\n*Ini adalah Bot Pintar untuk Membantu Anda*",
     "template.menu": "Ketik angka *{{number}}* : untuk *{{menu}}*",
     "menu.daftarHarga": "🗒️ Daftar Daftar Harga",
-    "tamplate.harga": "Ini Daftar Harga Kami :\n\nCuci lengkap : Rp. 5.000 \nCuci Kering : Rp. 4.500 \nSetrika : Rp. 3.500",
+    "tamplate.harga": "*Ini Daftar Harga Kami :*\n\nCuci lengkap : *Rp. 5.000* \nCuci Kering : *Rp. 4.500* \nSetrika : *Rp. 3.500*",
     "menu.cekStatus": "🔍 Cek Status Laundry",
     "menu.back": "🏡 Kembali ke Menu Utama",
     "footer": "*Laundry Terbaik Di Kotamu*",
