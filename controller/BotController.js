@@ -1,6 +1,8 @@
 const { Controller, Response } = require("pepesan");
 const f = require("../utils/Formatter");
 const gsheet = require("../service/gsheet")
+const gsheetpromo = require("../service/gsheetpromo")
+const gsheetharga = require("../service/gsheetharga")
 
 module.exports = class BotController extends Controller {
 
@@ -9,7 +11,8 @@ module.exports = class BotController extends Controller {
       return Response.menu.fromArrayOfString(
         [
           f("menu.daftarHarga"),
-          f("menu.cekStatus")
+          f("menu.cekStatus"),
+          f("menu.cekPromo")
         ],
         f("intro", [request.name]),
         f("template.menu")
@@ -17,14 +20,22 @@ module.exports = class BotController extends Controller {
     }
 
     async harga(request) {
-      await this.reply (f("tamplate.harga"))
-      await this.reply (f("footer"))
+      const responseStr = await gsheetharga.getData(request.number)
+      await this.reply (f("headerCekHarga"))
+      await this.reply(responseStr)
       return this.sendBasicMenu()
     }
 
     async cekStatus(request) {
       const responseStr = await gsheet.getData(request.number)
       await this.reply (f("headerCekStatus"))
+      await this.reply(responseStr)
+      return this.sendBasicMenu()
+    }
+
+    async cekPromo(request) {
+      const responseStr = await gsheetpromo.getData(request.number)
+      await this.reply (f("headerCekPromo"))
       await this.reply(responseStr)
       return this.sendBasicMenu()
     }
