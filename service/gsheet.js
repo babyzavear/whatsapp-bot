@@ -17,7 +17,7 @@ exports.getData = async (whatsapp) => {
         response.data.data.forEach(element => {
 
             if (element.whatsapp.toString() === whatsapp) {
-                responseStr += `Jenis Cucian : *${element.jenis_cucian}* *(${element.pcs})*\nHarga : *Rp.* *${element.total_bayar}*\nStatus : *${element.status}*\n\n`
+                responseStr += `Jenis Cucian : *${element.jenis_cucian}* *(${element.pcs} ${element.qty})*\nHarga : *Rp.* *${element.total_bayar}*\nStatus : *${element.status}*\n\n`
             }
             
         });
